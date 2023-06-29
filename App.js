@@ -1,14 +1,15 @@
-function App() {
-  function handleChangeName(){
-      const names = ['cricket','football','basketball'];
-      const int = Math.floor(Math.random()*3);
-      return names[int];
-    }
+import Content from "./Content";
+import Footer from "./Footer";
+import Header from "./Header";
 
+function App() {
+
+ 
   return (
     <div>
-      <p>React World!</p>
-      <p>Let's play the {handleChangeName()} game</p>
+     <Header/>
+     <Content/>
+     <Footer/>
     </div>
   );
 }
